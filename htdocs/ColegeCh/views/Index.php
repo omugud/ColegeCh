@@ -11,7 +11,7 @@
 
   <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="Index.html">Віртуальний клас</a>
+      <a class="navbar-brand" href="Index.php">Віртуальний клас</a>
       <div class="d-flex">
         <button class="btn-light"><a href="login.html" class="btn-lighht">Увійти</a></button>
         <button class="btn-outline-light"><a href="registre.html" class="btn-outlinee">Реєстрація</a></button>
