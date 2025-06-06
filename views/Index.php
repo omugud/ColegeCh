@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Віртуальний клас</title>
   <script src="https://kit.fontawesome.com/2d8b6b518f.js" crossorigin="anonymous"></script>
-  <link href="/home/pookie/Documents/GitHub/ColegeCh/views/public/css/main.css" rel="stylesheet">
+  <link href="public/css/main.css" rel="stylesheet">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="Index.html">Віртуальний клас</a>
+      <a class="navbar-brand" href="Index.php">Віртуальний клас</a>
       <div class="d-flex">
         <button class="btn-light"><a href="login.html" class="btn-lighht">Увійти</a></button>
         <button class="btn-outline-light"><a href="registre.html" class="btn-outlinee">Реєстрація</a></button>
