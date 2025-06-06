@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Віртуальний клас</title>
   <script src="https://kit.fontawesome.com/2d8b6b518f.js" crossorigin="anonymous"></script>
-  <link href="/home/pookie/Documents/GitHub/htdocs/ColegeCh/public/css/main.css" rel="stylesheet">
+  <link href="/home/pookie/Documents/GitHub/ColegeCh/htdocs/ColegeCh/public/css/main.css" rel="stylesheet">
 </head>
 <body>
 
