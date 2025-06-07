@@ -396,3 +396,13 @@ table, th, td, tabled{
     background-color: #dc3545;
     transition: all 0.2s ease;
 }
+.error_message{
+    font-weight: lighter;
+    font-size: 19px;
+    color: rgb(177, 32, 32);
+    background-color: #fc7d8a;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 3px;
+}

@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+$errors = [
+  'login' =>$_SESSION['login_error'] ?? '',
+  'register' =>$_SESSION['register_error'] ?? '',
+];
+
+session_unset();
+function showError($error){
+  return !empty($error) ? "<div class='error_message'><p>$error</p></div>" : '';
+}
+?>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -8,8 +21,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.php">Віртуальний клас</a>
       <div class="d-flex">
-        <button class="btn-light"><a href="login.html" class="btn-lighht">Увійти</a></button>
-        <button class="btn-outline-light"><a href="registre.html" class="btn-outlinee">Реєстрація</a></button>
+        <button class="btn-light"><a href="login.php" class="btn-lighht">Увійти</a></button>
+        <button class="btn-outline-light"><a href="registre.php" class="btn-outlinee">Реєстрація</a></button>
       </div>
     </div>
   </nav>
@@ -19,6 +32,7 @@
     <div class="card">
       <h3 class="text-center">Реєстрація</h3>
       <form action="login_register.php" method="post">
+        <?php echo showError($errors['register']); ?>
         <div class="mbt">
           <label for="name" class="form-label">ПІБ</label>
           <input type="text" class="form-control" id="name" name="name" placeholder="Фурманчук Владислав" required>
@@ -42,7 +56,7 @@
           <button type="submit" name="register" class="btn-registre">Зареєструватися</button>
       </form>
       <div class="mbt text-center">
-        <a class="bedd"href="login.html">Уже маєте акаунт? Увійдіть</a>
+        <a class="bedd"href="login.php">Уже маєте акаунт? Увійдіть</a>
       </div>
     </div>
   </div>

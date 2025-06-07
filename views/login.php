@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+$errors = [
+  'login' =>$_SESSION['login_error'] ?? '',
+  'register' =>$_SESSION['register_error'] ?? '',
+];
+
+session_unset();
+function showError($error){
+  return !empty($error) ? "<div class='error_message'><p>$error</p></div>" : '';
+
+}
+?>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -8,8 +22,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.php">Віртуальний клас</a>
       <div class="d-flex">
-        <button class="btn-light"><a href="login.html" class="btn-lighht">Увійти</a></button>
-        <button class="btn-outline-light"><a href="registre.html" class="btn-outlinee">Реєстрація</a></button>
+        <button class="btn-light"><a href="login.php" class="btn-lighht">Увійти</a></button>
+        <button class="btn-outline-light"><a href="registre.php" class="btn-outlinee">Реєстрація</a></button>
       </div>
     </div>
   </nav>
@@ -18,7 +32,8 @@
   <div class="container">
     <div class="card">
       <h3 class="text-center">Вхід</h3>
-      <form action="login_regeister.php"  method="post">
+      <form action="login_register.php"  method="post">
+        <?php echo showError($errors['login']); ?>
         <div class="mbt">
           <label for="email" class="form-label">Електронна пошта</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
@@ -30,7 +45,7 @@
         <button type="submit" name="login" class="btn-login">Увійти</button>
       </form>
       <div class="mbt text-center">
-        <a class="bedd" href="registre.html">Ще не маєте акаунту? Зареєструйтеся</a>
+        <a class="bedd" href="registre.php">Ще не маєте акаунту? Зареєструйтеся</a>
       </div>
     </div>
   </div>

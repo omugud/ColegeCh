@@ -13,8 +13,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.php">Віртуальний клас</a>
       <div class="d-flex">
-        <button class="btn-light"><a href="login.html" class="btn-lighht">Увійти</a></button>
-        <button class="btn-outline-light"><a href="registre.html" class="btn-outlinee">Реєстрація</a></button>
+        <button class="btn-light"><a href="login.php" class="btn-lighht">Увійти</a></button>
+        <button class="btn-outline-light"><a href="registre.php" class="btn-outlinee">Реєстрація</a></button>
       </div>
     </div>
   </nav>
@@ -23,7 +23,7 @@
     <div class="contaier text-center">
       <h1 class="headdd">Навчайся онлайн — просто та зручно</h1>
       <p class="lead">Організовуйте віртуальні уроки з Google Meet. Для вчителів та учнів загальноосвітніх шкіл.</p>
-      <a href="registre.html" class="btn-login"><span class="btn-login">Почати зараз</span></a>
+      <a href="registre.php" class="btn-login"><span class="btn-login">Почати зараз</span></a>
     </div>
   </header>
 
