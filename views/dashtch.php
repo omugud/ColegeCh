@@ -46,11 +46,11 @@ $result = $conn->query("SELECT * FROM lessons WHERE teacher = '{$_SESSION['name'
         <th>Дії</th>
       </tr>
     </thead>
-    <tbody class="tabled">
+    <tbody class="table">
       <?php 
       if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-          echo "<tr>";
+          echo "<tr class='tabled'>";
           echo "<td>" . $row['date'] . "</td>";
           echo "<td>" . $row['time'] . "</td>";
           echo "<td>" . $row['object'] . "</td>";
