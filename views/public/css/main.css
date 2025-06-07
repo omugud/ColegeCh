@@ -140,6 +140,12 @@
   .bedd{
     font-size: 17px;
     color: #0d6efd;
+    text-decoration: none;
+    
+  }
+  .bedd:hover{
+  text-decoration: underline;
+  
   }
   .navbar-brand {
     font-size: 15pt;
@@ -150,6 +156,11 @@
     box-sizing: border-box;
     color: aliceblue;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-brand:hover{
+	transform: scale(1.1);
+	
   }
   .btn{
     filter:none;
@@ -286,6 +297,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     box-sizing: border-box;
+    
 }
 .tabled{
     width: 100%;
@@ -304,7 +316,7 @@ table, th, td, tabled{
     padding: 10px;
 
 }
-.containerleson{
+.containerleson.active{
     padding-top: 55px;
     margin-left: auto;
     margin-right: auto;
@@ -313,6 +325,10 @@ table, th, td, tabled{
     min-width: 960px;
     padding: 24px;  
     box-sizing: border-box;
+    display: block;
+}
+.containerleson{
+    display: none;
 }
 .mbtups{
     margin-bottom: 24px;
@@ -337,6 +353,7 @@ table, th, td, tabled{
 .btn-newleson:hover{
     background-color: #146c43;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 .btn-outline-light-reg{
     background-color: transparent;
@@ -405,4 +422,48 @@ table, th, td, tabled{
     margin-bottom: 16px;
     border-radius: 8px;
     padding: 3px;
+}
+.containernewleson{
+  padding-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1320px;
+  min-width: 960px;
+  padding: 24px;  
+  box-sizing: border-box;
+  display: none;
+}
+.containernewleson.active{
+  display: block;
+}
+.btn-newlist{
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color:#198754;
+  color: white;
+  border: transparent;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.btn-newlist:hover{
+  background-color: #146c43;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.form-group{
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1320px;
+  min-width: 960px;
+}
+.form-group label{
+  font-size: 33px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 8px;
 }
