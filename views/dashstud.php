@@ -48,7 +48,7 @@ $result = $conn->query("SELECT * FROM lessons ORDER BY date, time");
           echo "<td>" . $row['time'] . "</td>";
           echo "<td>" . $row['object'] . "</td>";
           echo "<td>" . $row['teacher'] . "</td>";
-          echo "<td><a href='https://meet.google.com/abc-defg-hij' target='_blank'>Приєднатися</a></td>";
+          echo "<td><a href='" . $row['meeting_link'] . "' target='_blank'>Приєднатися</a></td>";
           echo "</tr>";
         }
       } else {

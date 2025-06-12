@@ -55,7 +55,7 @@ $result = $conn->query("SELECT * FROM lessons WHERE teacher = '{$_SESSION['name'
           echo "<td>" . $row['time'] . "</td>";
           echo "<td>" . $row['object'] . "</td>";
           echo "<td>2-КН</td>";
-          echo "<td><a href='https://meet.google.com/abc-defg-hij' target='_blank'>Перейти</a></td>";
+          echo "<td><a href='" . $row['meeting_link'] . "' target='_blank'>Перейти</a></td>";
           echo "<td>
             <button class='btn-outline-light-red' onclick='confirmDelete(" . $row['id'] . ")'><a href='delete_lesson.php?id=" . $row['id'] . "' class='btn-outline-red'>Видалити</a></button>
           </td>";
